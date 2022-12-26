@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#54e687"
+    android:weightSum="3"
+    tools:context=".FeedbackActivity">
+
+    <LinearLayout
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <EditText
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:id="@+id/nameEditTextId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter your name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    <EditText
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:id="@+id/messageEditTextId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter your Feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            style="@style/Base.CardView"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="Send"
+            android:id="@+id/sendButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_marginLeft="10dp"
+            style="@style/Base.CardView"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="Clear"
+            android:id="@+id/clearButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
